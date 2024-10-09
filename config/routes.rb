@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "pages#home"
+
+  # Defines the route for the podcast show page
+  get "podcasts/:id", to: "podcasts#show", as: :podcast
 end
