@@ -99,6 +99,10 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    dotenv (3.1.4)
+    dotenv-rails (3.1.4)
+      dotenv (= 3.1.4)
+      railties (>= 6.1)
     drb (2.2.1)
     error_highlight (0.6.0)
     erubi (1.13.0)
@@ -248,13 +252,14 @@ PLATFORMS
   arm-linux
   arm64-darwin
   x86-linux
-  x86_64-darwin
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
   bootsnap
   capybara
   debug
+  dotenv-rails
   error_highlight (>= 0.4.0)
   importmap-rails
   jbuilder

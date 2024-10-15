@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   root "pages#home"
 
   # Defines the route for the podcast show page
-  get "podcasts/:id", to: "podcasts#show", as: :podcast
+  resources :podcasts, only: [:new, :create, :show]
+  # get "podcasts/:id", to: "podcasts#show", as: :podcast
 end
